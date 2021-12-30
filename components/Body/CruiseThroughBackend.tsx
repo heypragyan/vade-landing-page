@@ -28,13 +28,13 @@ const CruiseThroughBackend = () => {
             </strong>
             <br />
             <br />
-            We've baked-in over 100 integrations directly into the platform, so
+            We&apos;ve baked-in over 100 integrations directly into the platform, so
             you can integrate quickly and easily with other services, databases
             and applications out there.
           </p>
         </div>
         <div className="w-full m-8">
-          <Image src={integrationGif} />
+          <Image src={integrationGif} alt="Integration Animation"/>
         </div>
       </div>
       <div className="flex flex-col md:flex-row-reverse space-around relative text-left md:text-right">
@@ -58,7 +58,7 @@ const CruiseThroughBackend = () => {
           </p>
         </div>
         <div className="w-full m-8">
-          <Image src={configureGif} />
+          <Image src={configureGif}  alt="Configuration Animation"/>
         </div>
       </div>
       <div className="flex flex-col md:flex-row space-around relative text-left">
@@ -82,7 +82,7 @@ const CruiseThroughBackend = () => {
           </p>
         </div>
         <div className="w-full m-8">
-          <Image src={testGif} />
+          <Image src={testGif} alt="Testing Animation"/>
         </div>
       </div>
     </div>
