@@ -6,14 +6,14 @@ import testGif from "../assets/Assets/Gifs/3. Test.gif"
 
 const CruiseThroughBackend = () => {
   return (
-    <div className="pt-36 px-36">
-      <h1 className="font-bold text-6xl pb-20">
+    <div className="pt-36 px-64">
+      <h1 className="font-bold text-6xl pb-24">
         <span className="text-[#8B12FC]">Cruise </span>
         Through Backend
       </h1>
       <div className="flex flex-col md:flex-row space-around relative text-left">
-        <div className="w-full m-8">
-          <h1 className="text-9xl text-gray-300 font-bold absolute -top-16 left-0 z-0">
+        <div className="w-full m-8 z-0">
+          <h1 className="text-9xl text-gray-300 font-bold absolute -top-16 left-0 z-[-1]">
             #1
           </h1>
           <h1 className="font-semibold text-3xl w-3/4 z-20 text-black">
@@ -38,8 +38,8 @@ const CruiseThroughBackend = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row-reverse space-around relative text-left md:text-right">
-        <div className="w-full m-8">
-          <h1 className="text-9xl text-gray-300 font-bold absolute -top-16 left-0 md:right-0 z-0">
+        <div className="w-full m-8 z-0">
+          <h1 className="text-9xl text-gray-300 font-bold absolute -top-16 left-0 md:right-0 z-[-1]">
             #2
           </h1>
           <h1 className="font-semibold text-3xl w-3/4 ml-auto z-20 text-black">
@@ -62,8 +62,8 @@ const CruiseThroughBackend = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row space-around relative text-left">
-        <div className="w-full m-8">
-          <h1 className="text-9xl text-gray-300 font-bold absolute -top-16 left-0 z-0">
+        <div className="w-full m-8 z-0">
+          <h1 className="text-9xl text-gray-300 font-bold absolute -top-16 left-0 z-[-1]">
             #3
           </h1>
           <h1 className="font-semibold text-3xl w-3/4 z-20 text-black">

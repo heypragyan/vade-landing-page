@@ -17,15 +17,15 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-center space-y-5">
         <span className="text-[#7A7A7A]">Contact</span>
         <a
-          href="mailto:vadelabs@support.com"
+          href="mailto:hello@vadelabs.com"
           className="flex items-center space-x-3"
         >
           <Web />
-          <span>vadelabs@support.com</span>
+          <span>hello@vadelabs.com</span>
         </a>
-        <a href="tel:+918084495364" className="flex items-center space-x-3">
+        <a href="tel:+917829887887" className="flex items-center space-x-3">
           <Phone />
-          <span>+91-8084495364</span>
+          <span>+91-7829887887</span>
         </a>
       </div>
     </footer>

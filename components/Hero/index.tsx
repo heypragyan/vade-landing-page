@@ -6,7 +6,7 @@ import heroBg from "../assets/Assets/Images/hero_background.png";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-[80vh]">
+    <div className="relative min-h-[80vh] max-w-6xl m-auto">
       {/* <DotsPattern className='w-full -mt-8 absolute top-0 left-0'/> */}
       {/* <div className="absolute left-0 w-full">
         <Image src={heroBg} layout="responsive" />

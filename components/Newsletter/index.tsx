@@ -10,7 +10,7 @@ const NewsLetter = ({ className }: { className?: string }) => {
   return (
     <form onSubmit={formSubmitHandler} className={className}>
       <div className="flex">
-        <input type="text" className="border-2 border-[#8B12FC] rounded-l-xl w-96"/>
+        <input type="text" className="border-2 border-[#8B12FC] rounded-l-xl max-w-96 w-16 sm:w-48 md:w-96 min-w-max"/>
         <button className="bg-[#8B12FC] text-white py-3 px-4 rounded-r-xl" >Get Early Access</button>
       </div>
     </form>
