@@ -9,8 +9,8 @@ const BackToTop = () => {
   };
 
   return (
-    <div className="h-96 relative">
-      <button onClick={backToTop} className="fixed right-0 bottom-0 m-12 w-max flex flex-col items-center space-y-2">
+    <div className="h-24 sm:h-36 md:h-48 relative select-none">
+      <button onClick={backToTop} className="fixed right-0 bottom-0 m-3 md:m-12 w-max flex flex-col items-center space-y-2">
         <BTTButton />
         <span className="font-semibold text-purple-500 mix-blend-difference">
         Back To Top

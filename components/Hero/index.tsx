@@ -12,10 +12,10 @@ const Hero = () => {
         <Image src={heroBg} layout="responsive" />
       </div> */}
       <div className="m-auto text-center space-y-5 pt-28">
-        <h1 className="text-6xl font-bold w-1/2 m-auto">
+        <h1 className="text-6xl font-bold w-full md:w-1/2 m-auto">
           Build Backend Systems in Minutes
         </h1>
-        <p className="font-semibold text-xl w-2/5 m-auto">
+        <p className="font-semibold text-xl w-10/12 md:w-2/5 m-auto">
           Get ridiculously creative with your products and let us do the hard
           work for you!
         </p>
