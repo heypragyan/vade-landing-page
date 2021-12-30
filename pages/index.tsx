@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Navbar from '@components/Navbar'
 import Hero from '@components/Hero'
 import Body from '@components/Body'
+import Footer from '@components/Footer/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +10,7 @@ const Home: NextPage = () => {
       <Navbar />
       <Hero />
       <Body />
+      <Footer />
     </div>
   )
 }
