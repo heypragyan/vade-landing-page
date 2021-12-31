@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white flex justify-around p-8 w-full flex-col md:flex-row space-y-12">
-      <div className="flex flex-col items-center justify-center space-y-5">
+    <footer className="bg-black text-white flex justify-around p-8 w-full flex-col-reverse md:flex-row py-6">
+      <div className="flex flex-col items-center justify-center space-y-5 my-6">
         <span>© 2022 Vade Labs Pvt. Ltd.</span>
         <span className="flex space-x-5">
           <a href="https://twitter.com/vadelabs">
@@ -14,7 +14,7 @@ const Footer = () => {
           </a>
         </span>
       </div>
-      <div className="flex flex-col items-center justify-center space-y-5">
+      <div className="flex flex-col items-center justify-center space-y-5 my-6">
         <span className="text-[#7A7A7A] text-xl font-semibold md:text-base md:font-normal">Contact</span>
         <a
           href="mailto:hello@vadelabs.com"
