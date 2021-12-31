@@ -1,17 +1,11 @@
 import NewsLetter from "@components/Newsletter";
 import Image from "next/image";
 import React from "react";
-import DotsPattern from "svg-assets/DotsPattern";
-import heroBg from "../assets/Assets/Images/hero_background.png";
 
 const Hero = () => {
   return (
     <div className="relative min-h-[80vh] m-auto bg-[url(/herobg.png)] bg-cover pb-36 md:pb-96 bg-origin-border [background-position-y:center] [background-position-x:left]">
-      {/* <DotsPattern className='w-full -mt-8 absolute top-0 left-0'/> */}
-      {/* <div className="absolute left-0 w-screen min-w-[998px]">
-        <Image src={heroBg} layout="responsive" objectFit="contain" objectPosition="center"/>
-      </div> */}
-      <div className="m-auto text-center space-y-5 pt-24 md:pt-28">
+      <div className="m-auto text-center space-y-5 pt-24 md:pt-28 max-w-6xl">
         <h1 className="text-5xl md:text-6xl font-bold w-full md:w-3/5 m-auto drop-shadow-md">
           Build Backend Systems in Minutes
         </h1>

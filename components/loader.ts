@@ -1,6 +1,6 @@
 import { ImageLoaderProps } from "next/image";
 
-export const cloudflareImageLoader = ({ src, width, quality }: ImageLoaderProps) => {
+const cloudflareImageLoader = ({ src, width, quality }: ImageLoaderProps) => {
   if (!quality) {
     quality = 75;
   }
