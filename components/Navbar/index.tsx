@@ -1,14 +1,26 @@
 import React from "react";
 
 const Navbar = () => {
+
+  const logoOnClick = () => {
+    typeof window !== "undefined" && window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
+  const earlyAccessonClick = () => {
+    document.getElementById("heroLetter")?.focus()
+  }
+
   return (
     <header className="w-full bg-[#FFFFFF] flex justify-between items-center px-4 sm:px-16 py-3 shadow-lg sticky top-0 z-20">
-      <Logo className="h-5 sm:h-6 w-max" />
+      <Logo className="h-5 sm:h-6 w-max cursor-pointer" onClick={logoOnClick}/>
       <nav className="hidden md:flex justify-between w-[42%] lg:w-1/3">
         <a href="">Skip the Hassle</a>
         <a href="">Cruise through Backend</a>
       </nav>
-      <button className="bg-[#8B12FC] p-3 rounded-lg font-normal text-white min-w-max">
+      <button className="bg-[#8B12FC] p-3 rounded-lg font-normal text-white min-w-max" onClick={earlyAccessonClick}>
         Get Early Access
       </button>
     </header>
@@ -17,11 +29,12 @@ const Navbar = () => {
 
 export default Navbar;
 
-const Logo = ({ className }: { className?: string }): JSX.Element => {
+const Logo = ({ className, onClick }: { className?: string, onClick?: () => void }): JSX.Element => {
   return (
     <svg
       width="230"
       className={className}
+      onClick={onClick}
       height="34"
       viewBox="0 0 230 34"
       fill="none"

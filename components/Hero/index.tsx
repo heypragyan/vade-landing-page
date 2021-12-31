@@ -19,7 +19,7 @@ const Hero = () => {
           Get ridiculously creative with your products and let us do the hard
           work for you!
         </p>
-        <NewsLetter className="m-auto w-max" />
+        <NewsLetter className="m-auto w-max" id="heroLetter"/>
       </div>
     </div>
   );

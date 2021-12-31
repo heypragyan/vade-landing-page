@@ -1,21 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const BackToTop = () => {
+  const [visible, setVisible] = useState(false);
+
+  const scrollHandler = () => {
+    if (window.scrollY >= 500) setVisible(true);
+    if (window.scrollY < 500) setVisible(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
+
   const backToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
-    })
+      behavior: "smooth",
+    });
   };
 
   return (
     <div className="h-24 sm:h-36 md:h-48 relative select-none">
-      <button onClick={backToTop} className="fixed right-0 bottom-0 m-3 md:m-12 w-max flex flex-col items-center space-y-2">
-        <BTTButton />
-        <span className="font-semibold text-purple-500 mix-blend-difference">
-        Back To Top
-        </span>
-      </button>
+        <button
+          onClick={backToTop}
+          className={`fixed right-0 bottom-0 m-3 md:m-12 w-max flex flex-col items-center space-y-2 transition-all ${
+            visible ? "[visibility:visible] opacity-100" : "[visibility:hidden] opacity-0"
+          }`}
+        >
+          <BTTButton />
+          <span className="font-semibold text-purple-500 mix-blend-difference">
+            Back To Top
+          </span>
+        </button>
     </div>
   );
 };

@@ -45,7 +45,7 @@ const StepOne = () => {
         </p>
       </div>
       <div className="w-full p-4">
-        <Image src={integrationGif} alt="Integration Animation" />
+        <Image src={integrationGif} alt="Integration Animation"/>
       </div>
     </div>
   );
