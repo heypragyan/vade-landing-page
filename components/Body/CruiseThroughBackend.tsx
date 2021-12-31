@@ -19,6 +19,7 @@ const CruiseThroughBackend = () => {
       <StepOne />
       <div className="h-64 md:h-48 relative">
         <CurveTop className="h-48 hidden md:block absolute right-1/2 transform translate-x-1/2 scale-125" />
+        <MobileConnector className="h-full block md:hidden absolute right-1/2 transform translate-x-1/2 scale-150" />
         <div className="absolute h-20 w-28 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 my-2">
           <Image src={configPng} />
         </div>
@@ -26,6 +27,8 @@ const CruiseThroughBackend = () => {
       <StepTwo />
       <div className="h-64 md:h-48 relative">
         <CurveBottom className="h-48 hidden md:block absolute right-1/2 transform translate-x-1/2 scale-125" />
+        <MobileConnector className="h-full block md:hidden absolute right-1/2 transform translate-x-1/2 scale-150" />
+
         <div className="absolute h-24 w-24 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <Image src={deployPng} />
         </div>
@@ -184,9 +187,9 @@ const MobileConnector = ({ className }: { className?: string }) => {
       <path
         d="M4 4V108"
         stroke="#EEEEEE"
-        stroke-width="7.072"
-        stroke-linecap="round"
-        stroke-dasharray="1.77 17.68"
+        strokeWidth="7.072"
+        strokeLinecap="round"
+        strokeDasharray="1.77 17.68"
       />
     </svg>
   );
