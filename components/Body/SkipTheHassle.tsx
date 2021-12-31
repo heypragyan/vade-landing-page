@@ -9,7 +9,9 @@ const SkipTheHassle = () => {
         <span className="text-[#8B12FC]">Skip </span>
         The Hassle
       </h1>
+      <div className="m-auto max-w-5xl">
       <Image src={skipTheHassle} layout="responsive" alt="Illustration" placeholder="blur"/>
+      </div>
     </div>
   );
 };
