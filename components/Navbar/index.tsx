@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full bg-[#FFFFFF] items-center px-4 sm:px-16 py-3 shadow-lg sticky top-0 z-20">
+    <header className="w-full bg-[#FFFFFF] items-center px-4 sm:px-16 py-3 shadow-lg sticky top-0 z-50">
       <div className=" flex justify-between items-center max-w-5xl m-auto">
         <Logo
           className="h-5 sm:h-6 cursor-pointer w-[150px]"
