@@ -57,13 +57,13 @@ const NewsLetter = ({ className, id }: { className?: string; id?: string }) => {
 
   return (
     <form onSubmit={formSubmitHandler} className={className}>
-      <div className="flex flex-col sm:flex-row drop-shadow-lg w-96">
+      <div className="flex flex-col sm:flex-row drop-shadow-lg">
         {formState === "unsubmitted" && (
           <>
             <input
               aria-label="Email for Early Access"
               type="email"
-              className="border-2 border-[#8B12FC] rounded-t-xl sm:rounded-l-xl sm:rounded-r-none w-full sm:w-48 md:w-96 p-2 outline-none text-center sm:text-left"
+              className="border-2 border-[#8B12FC] rounded-t-xl sm:rounded-l-xl sm:rounded-r-none max-w-96 w-64 sm:w-48 md:w-96 p-2 outline-none text-center sm:text-left"
               placeholder="Enter Your Email"
               id={id}
               value={email}
@@ -71,14 +71,14 @@ const NewsLetter = ({ className, id }: { className?: string; id?: string }) => {
             />
             <button
               type="submit"
-              className="bg-[#8B12FC] text-white py-3 px-2 md:px-4 w-full rounded-b-xl sm:rounded-r-xl sm:rounded-l-none "
+              className="bg-[#8B12FC] text-white py-3 px-2 md:px-4 rounded-b-xl sm:rounded-r-xl sm:rounded-l-none "
             >
               Get Early Access
             </button>
           </>
         )}
         {formState === "submitted" && (
-          <div className="w-full m-auto rounded-xl bg-[#8B12FC] py-3 px-4 font-light text-white text-xl">
+          <div className="m-auto rounded-xl bg-[#8B12FC] py-3 px-4 font-light text-white text-xl w-[538px]">
             Thank You for Your Interest!
           </div>
         )}
@@ -95,7 +95,7 @@ const NewsLetter = ({ className, id }: { className?: string; id?: string }) => {
               <input
                 aria-label="Email for Early Access"
                 type="email"
-                className="border-2 border-[#f44336] rounded-t-xl sm:rounded-l-xl sm:rounded-r-none w-full sm:w-48 md:w-96 p-2 outline-none text-center sm:text-left"
+                className="border-2 border-[#f44336] rounded-t-xl sm:rounded-l-xl sm:rounded-r-none max-w-96 w-64 sm:w-48 md:w-96 p-2 outline-none text-center sm:text-left"
                 placeholder="Enter Your Email"
                 id={id}
                 value={email}
@@ -103,7 +103,7 @@ const NewsLetter = ({ className, id }: { className?: string; id?: string }) => {
               />
               <button
                 type="submit"
-                className="bg-[#f44336] text-white py-3 px-2 md:px-4 w-full rounded-b-xl sm:rounded-r-xl sm:rounded-l-none "
+                className="bg-[#f44336] text-white py-3 px-2 md:px-4 rounded-b-xl sm:rounded-r-xl sm:rounded-l-none "
               >
                 Get Early Access
               </button>
