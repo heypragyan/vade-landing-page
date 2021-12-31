@@ -1,3 +1,4 @@
+import { cloudflareImageLoader } from "@components/loader";
 import Image from "next/image";
 import React from "react";
 import skipTheHassle from '../assets/Assets/Images/hassle.png'
@@ -10,7 +11,7 @@ const SkipTheHassle = () => {
         The Hassle
       </h1>
       <div className="m-auto max-w-5xl">
-      <Image src={skipTheHassle} layout="responsive" alt="Illustration" placeholder="blur"/>
+      <Image src={skipTheHassle} layout="responsive" alt="Illustration" placeholder="blur" loader={cloudflareImageLoader}/>
       </div>
     </div>
   );

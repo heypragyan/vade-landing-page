@@ -5,6 +5,7 @@ import configureGif from "../assets/Assets/Gifs/2. Edit Integrations.gif";
 import testGif from "../assets/Assets/Gifs/3. Test.gif";
 import configPng from "../assets/Assets/Images/config.png";
 import deployPng from "../assets/Assets/Images/deploy.png";
+import { cloudflareImageLoader } from "@components/loader";
 
 const CruiseThroughBackend = () => {
   return (
@@ -21,7 +22,7 @@ const CruiseThroughBackend = () => {
         <CurveTop className="h-48 hidden md:block absolute right-1/2 transform translate-x-1/2 scale-125" />
         <MobileConnector className="h-full block md:hidden absolute right-1/2 transform translate-x-1/2 scale-150" />
         <div className="absolute h-20 w-28 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 my-2">
-          <Image src={configPng} />
+          <Image src={configPng} loader={cloudflareImageLoader}/>
         </div>
       </div>
       <StepTwo />
@@ -30,7 +31,7 @@ const CruiseThroughBackend = () => {
         <MobileConnector className="h-full block md:hidden absolute right-1/2 transform translate-x-1/2 scale-150" />
 
         <div className="absolute h-24 w-24 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <Image src={deployPng} />
+          <Image src={deployPng} loader={cloudflareImageLoader} />
         </div>
       </div>
       <StepThree />
@@ -70,7 +71,7 @@ const StepOne = () => {
       </div>
       <div className="w-full p-4">
         <div className="shadow-lg rounded-lg overflow-hidden border-2 border-[#8B12FC]">
-          <Image src={integrationGif} alt="Integration Animation" />
+          <Image src={integrationGif} alt="Integration Animation"  loader={cloudflareImageLoader}/>
         </div>
       </div>
     </div>
@@ -102,7 +103,7 @@ const StepTwo = () => {
       </div>
       <div className="w-full p-4">
         <div className="shadow-lg rounded-lg overflow-hidden border-2 border-[#8B12FC]">
-          <Image src={configureGif} alt="Configuration Animation" />
+          <Image src={configureGif} alt="Configuration Animation" loader={cloudflareImageLoader} />
         </div>
       </div>
     </div>
@@ -132,7 +133,7 @@ const StepThree = () => {
       </div>
       <div className="w-full p-4">
         <div className="shadow-lg rounded-lg overflow-hidden border-2 border-[#8B12FC]">
-          <Image src={testGif} alt="Testing Animation" />
+          <Image src={testGif} alt="Testing Animation"  loader={cloudflareImageLoader}/>
         </div>
       </div>
     </div>
