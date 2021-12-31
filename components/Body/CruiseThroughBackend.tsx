@@ -21,7 +21,7 @@ const CruiseThroughBackend = () => {
         <CurveTop className="h-48 hidden md:block absolute right-1/2 transform translate-x-1/2 scale-125" />
         <MobileConnector className="h-full block md:hidden absolute right-1/2 transform translate-x-1/2 scale-150" />
         <div className="absolute h-20 w-28 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 my-2">
-          <Image src={configPng}/>
+          <Image src={configPng} alt="Illustration"/>
         </div>
       </div>
       <StepTwo />
@@ -30,7 +30,7 @@ const CruiseThroughBackend = () => {
         <MobileConnector className="h-full block md:hidden absolute right-1/2 transform translate-x-1/2 scale-150" />
 
         <div className="absolute h-24 w-24 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <Image src={deployPng} />
+          <Image src={deployPng}  alt="Illustration"/>
         </div>
       </div>
       <StepThree />

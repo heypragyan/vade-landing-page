@@ -88,7 +88,7 @@ const NewsLetter = ({ className, id }: { className?: string; id?: string }) => {
                 <Check className="inline-block" />
               </span>
               <div className="flex flex-col items-end font-light md:font-normal my-1">
-                <span>Didn't recieve?</span>
+                <span>Didn&apos;t recieve?</span>
                 <span
                   className="font-semibold text-red-600 cursor-pointer"
                   onClick={resendHandler}

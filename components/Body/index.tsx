@@ -7,16 +7,15 @@ import CruiseThroughBackend from "./CruiseThroughBackend";
 import SecondaryDesc from "./SecondaryDesc";
 import NewsLetter from "@components/Newsletter";
 import BackToTop from "./BackToTop";
-import { cloudflareImageLoader } from "@components/loader";
 
 const Body = () => {
   return (
     <div className="bg-white w-full rounded-t-3xl sm:rounded-t-[3rem] md:rounded-t-[3.5rem] lg:rounded-t-[4rem] shadow-[2px_-4px_100px_100px_#0000000F] text-center z-20 relative">
       <Desc />
-      <Image src={doodleBot} loader={cloudflareImageLoader} />
+      <Image src={doodleBot} alt="doodle"/>
       <SkipTheHassle />
       <CruiseThroughBackend />
-      <Image src={doodleBot}  loader={cloudflareImageLoader}/>
+      <Image src={doodleBot} alt="doodle"/>
       <SecondaryDesc />
       <NewsLetter className="m-auto w-max" />
       <BackToTop />
