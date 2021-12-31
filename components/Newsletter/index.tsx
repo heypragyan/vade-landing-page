@@ -109,7 +109,7 @@ const NewsLetter = ({ className, id }: { className?: string; id?: string }) => {
               </button>
             </div>
             <span className="flex items-center font-medium tracking-wide text-[#f44336] text-xs mt-1 ml-1">
-              Invalid username field !
+              Please enter valid email !
             </span>
           </div>
         )}
