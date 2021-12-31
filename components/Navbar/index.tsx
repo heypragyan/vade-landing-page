@@ -5,8 +5,8 @@ const Navbar = () => {
     <header className="w-full bg-[#FFFFFF] flex justify-between items-center px-4 sm:px-16 py-3 shadow-lg sticky top-0 z-20">
       <Logo className="h-5 sm:h-6 w-max" />
       <nav className="hidden md:flex justify-between w-[42%] lg:w-1/3">
-        <a href="">Skip the Hassle</a>
-        <a href="">Cruise through Backend</a>
+        <a href="#skip-the-hassle">Skip the Hassle</a>
+        <a href="#cruise-through-backend">Cruise through Backend</a>
       </nav>
       <button className="bg-[#8B12FC] p-3 rounded-lg font-normal text-white min-w-max">
         Get Early Access
@@ -19,7 +19,8 @@ export default Navbar;
 
 const Logo = ({ className }: { className?: string }): JSX.Element => {
   return (
-    <svg
+    <a href="#">
+      <svg
       width="230"
       className={className}
       height="34"
@@ -32,5 +33,6 @@ const Logo = ({ className }: { className?: string }): JSX.Element => {
         fill="#8B12FC"
       />
     </svg>
+    </a>
   );
 };

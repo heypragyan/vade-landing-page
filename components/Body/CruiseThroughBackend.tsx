@@ -6,7 +6,7 @@ import testGif from "../assets/Assets/Gifs/3. Test.gif";
 
 const CruiseThroughBackend = () => {
   return (
-    <div className="pt-36 px-6 md:px-64 box-border">
+    <div className="pt-36 px-6 md:px-64 box-border" id="cruise-through-backend">
       <h1 className="font-bold text-5xl md:text-6xl pb-24">
         <span className="text-[#8B12FC]">Cruise </span>
         Through Backend
