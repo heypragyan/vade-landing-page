@@ -42,7 +42,7 @@ const NewsLetter = ({ className, id }: { className?: string, id?: string }) => {
 
   return (
     <form onSubmit={formSubmitHandler} className={className}>
-      <div className="flex flex-col sm:flex-row">
+      <div className="flex flex-col sm:flex-row drop-shadow-lg">
         <input
           aria-label="Email for Early Access"
           type="email"
