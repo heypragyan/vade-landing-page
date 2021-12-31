@@ -17,8 +17,8 @@ const Navbar = () => {
     <header className="w-full bg-[#FFFFFF] flex justify-between items-center px-4 sm:px-16 py-3 shadow-lg sticky top-0 z-20">
       <Logo className="h-5 sm:h-6 w-max cursor-pointer" onClick={logoOnClick}/>
       <nav className="hidden md:flex justify-between w-[42%] lg:w-1/3">
-        <a href="">Skip the Hassle</a>
-        <a href="">Cruise through Backend</a>
+        <a href="#skip-the-hassle">Skip the Hassle</a>
+        <a href="#cruise-through-backend">Cruise through Backend</a>
       </nav>
       <button className="bg-[#8B12FC] p-3 rounded-lg font-normal text-white min-w-max" onClick={earlyAccessonClick}>
         Get Early Access
@@ -31,7 +31,8 @@ export default Navbar;
 
 const Logo = ({ className, onClick }: { className?: string, onClick?: () => void }): JSX.Element => {
   return (
-    <svg
+    <a href="#">
+      <svg
       width="230"
       className={className}
       onClick={onClick}
@@ -45,5 +46,6 @@ const Logo = ({ className, onClick }: { className?: string, onClick?: () => void
         fill="#8B12FC"
       />
     </svg>
+    </a>
   );
 };
